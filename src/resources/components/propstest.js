@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function print_box_props (props) {
+export default function PropsTest (props) {
 
     return (
 

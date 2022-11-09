@@ -1,7 +1,7 @@
 import React from 'react'
 import img_logo from '../images/logo.svg'
 
-export default function print_head_titles () {
+export default function HeaderModule () {
 
     return (
 
