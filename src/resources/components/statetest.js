@@ -4,7 +4,7 @@
 ///
 
 // get react
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 //...
 export default function StateTest () {
