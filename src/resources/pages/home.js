@@ -48,8 +48,10 @@ export default function Home () {
 
 					<small>
 
-						// In this way it's all readable and easy, but remember
-						// it's a good role work and pass an object, not entity.
+						{/* 
+							In this way it's all readable and easy, but remember
+							it's a good role work and pass an object, not entity.
+						*/}
 
 						<PropsTest title="TITLE 01" contents="Lorem	Ipsum"/>
 						<PropsTest title="TITLE 02" contents="Dolor sit amet"/>
