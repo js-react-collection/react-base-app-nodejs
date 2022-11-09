@@ -28,7 +28,7 @@ export default function Home () {
 	var classtest = new external_class_test("mytest",10)
 
 	var updateVal = function () { 
-		// classic dom manipulation way... so, you refresh page.
+		// classic dom manipulation way... (so, you refresh page?)
 		document.getElementById('classtest').innerText = classtest.getValue()
 	}
 
@@ -48,9 +48,12 @@ export default function Home () {
 
 					<small>
 
-						<PropsTest title="TEST01" contents="Lorem	Ipsum"/>
-						<PropsTest title="TEST02" contents="Dolor sit amet"/>
-						<PropsTest title="TEST03" contents="consectetur adipiscing elit"/>
+						// In this way it's all readable and easy, but remember
+						// it's a good role work and pass an object, not entity.
+
+						<PropsTest title="TITLE 01" contents="Lorem	Ipsum"/>
+						<PropsTest title="TITLE 02" contents="Dolor sit amet"/>
+						<PropsTest title="TITLE 03" contents="consectetur adipiscing elit"/>
 
 					</small>
 
