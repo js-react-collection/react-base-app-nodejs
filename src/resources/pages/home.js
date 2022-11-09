@@ -1,6 +1,9 @@
+///
+/// a component... and first demo page 
+///
 
-//import css
-import './home.css'
+// get css
+import './style.css'
 
 //an external funciton
 import external_function_test from '../scripts/external_function_test.js'
@@ -17,7 +20,7 @@ import PropsTest from '../components/propstest.js'
 //test state
 import StateTest from '../components/statetest.js'
 
-
+//...
 export default function Home () {
 
 	var inner_functions_test = () => console.log("TEST 1 RUNNED!")
@@ -33,19 +36,9 @@ export default function Home () {
 
 		<div className="App">
 
-			<button onClick={()=>{
-				this.history.push('/link')
-			}}>
-				PAGE "LINK"
-			</button>
-
 			<header className="App-header">
 
 				<Printheadtitles />
-
-				<p>
-					Edit <code>home.js</code> and save to reload.
-				</p>
 
 				<details>
 
@@ -111,8 +104,6 @@ export default function Home () {
 
 					</small>
 				</details>
-
-				
 
 				<details>
 

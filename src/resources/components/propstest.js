@@ -1,5 +1,9 @@
-import React from 'react'
 
+///
+/// Passing the properties from parent to child component
+///
+
+//...
 export default function PropsTest (props) {
 
     return (
