@@ -20,6 +20,10 @@ import PropsTest from '../components/propstest.js'
 //test state
 import StateTest from '../components/statetest.js'
 
+//test effect
+import EffectTest from '../components/effecttest.js'
+
+
 //...
 export default function Home () {
 
@@ -70,6 +74,20 @@ export default function Home () {
 					<small>
 
 						<StateTest />
+
+					</small>
+
+				</details>
+
+				<details>
+
+					<summary>
+						<p>TEST EFFECT</p>
+					</summary>
+
+					<small>
+
+						<EffectTest />
 
 					</small>
 
