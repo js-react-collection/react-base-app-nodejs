@@ -2,26 +2,46 @@
 /// a component... and first demo page 
 ///
 
+
 // get css
 import './style.css'
 
-//an external funciton
-import external_function_test from '../scripts/external_function_test.js'
 
-//test class
-import external_class_test from '../scripts/external_class_test.js'
+// function:
 
-//test for simple module
-import Printheadtitles from '../components/header.js'
+	//an external function
+	import external_function_test from '../scripts/external_function_test.js'
 
-//an external funciton
-import PropsTest from '../components/propstest.js'
+	//test class
+	import external_class_test from '../scripts/external_class_test.js'
 
-//test state
-import StateTest from '../components/statetest.js'
+// modules:
 
-//test effect
-import EffectTest from '../components/effecttest.js'
+	//test for simple module
+	import Printheadtitles from '../components/header.js'
+
+	//an external funciton
+	import PropsTest from '../components/propstest.js'
+
+// hooks:
+
+	//test state
+	import StateTest from '../components/statetest.js'
+
+	//test effect
+	import EffectTest from '../components/effecttest.js'
+
+	//test effect
+	import RefTest from '../components/reftest.js'
+	
+	//test effect
+	import ContextTest from '../components/contexttest.js'
+
+	
+
+	//test Memo
+	// import MemoTest from '../components/memotest.js'
+
 
 
 //...
@@ -79,6 +99,7 @@ export default function Home () {
 
 				</details>
 
+				
 				<details>
 
 					<summary>
@@ -92,6 +113,50 @@ export default function Home () {
 					</small>
 
 				</details>
+
+				<details>
+
+					<summary>
+						<p>TEST REF</p>
+					</summary>
+
+					<small>
+
+						<RefTest />
+
+					</small>
+
+				</details>
+
+				<details>
+
+					<summary>
+						<p>TEST CONTEXT</p>
+					</summary>
+
+					<small>
+
+						<ContextTest />
+
+					</small>
+
+				</details>
+				
+
+				{/* <details>
+
+					<summary>
+						<p>TEST MEMO</p>
+					</summary>
+
+					<small>
+
+						<MemoTest />
+
+					</small>
+
+				</details> */}
+				
 
 				<details>
 
