@@ -7,6 +7,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+// get css
+import './resources/pages/style.css'
+
 //basic route switch component
 import Route from './resources/components/routing'
 

@@ -3,10 +3,6 @@
 ///
 
 
-// get css
-import './style.css'
-
-
 // function:
 
 	// an external function
