@@ -9,19 +9,19 @@ import img_logo from '../images/logo.svg'
 //...
 export default function HeaderModule () {
 
-    return (
+    return (<>
 
-        <div>
-            <img src={img_logo} className="App-logo" alt="logo" />
+            <img src={img_logo} className="logo" alt="logo" />
+
             <h1>HELLO WORLD!</h1>
             
             <a href="./">
                 home
-            </a>&nbsp;&nbsp;
+            </a>
+
             <a href="./credits">
                 Credits
             </a>
-
 
 			{/* <button
                 onClick={()=>{
@@ -40,8 +40,6 @@ export default function HeaderModule () {
 
 			</button> */}
 
-        </div>
-
-    )
+    </>)
 
 }

@@ -9,39 +9,36 @@ import './style.css'
 
 // function:
 
-	//an external function
+	// an external function
 	import external_function_test from '../scripts/external_function_test.js'
 
-	//test class
+	// test class
 	import external_class_test from '../scripts/external_class_test.js'
 
 // modules:
 
-	//test for simple module
+	// test for simple module
 	import Printheadtitles from '../components/header.js'
 
-	//an external funciton
+	// an external funciton
 	import PropsTest from '../components/propstest.js'
 
 // hooks:
 
-	//test state
+	// test state
 	import StateTest from '../components/statetest.js'
 
-	//test effect
+	// test effect
 	import EffectTest from '../components/effecttest.js'
 
-	//test effect
+	// test effect
 	import RefTest from '../components/reftest.js'
 	
-	//test effect
+	// test effect
 	import ContextTest from '../components/contexttest.js'
 
-	
-
-	//test Memo
+	// test Memo
 	// import MemoTest from '../components/memotest.js'
-
 
 
 //...
@@ -58,159 +55,155 @@ export default function Home () {
 
 	return (
 
-		<div className="App">
+		<div className="view">
 
-			<header className="App-header">
+			<Printheadtitles />
 
-				<Printheadtitles />
+			<details>
 
-				<details>
+				<summary>
+					<p>TEST PROPS</p>
+				</summary>
 
-					<summary>
-						<p>TEST PROPS</p>
-					</summary>
+				<small>
 
-					<small>
+					{/* 
+						In this way it's all readable and easy, but remember
+						it's a good role work and pass an object, not entity.
+					*/}
 
-						{/* 
-							In this way it's all readable and easy, but remember
-							it's a good role work and pass an object, not entity.
-						*/}
+					<PropsTest title="TITLE 01" contents="Lorem	Ipsum"/>
+					<PropsTest title="TITLE 02" contents="Dolor sit amet"/>
+					<PropsTest title="TITLE 03" contents="consectetur adipiscing elit"/>
 
-						<PropsTest title="TITLE 01" contents="Lorem	Ipsum"/>
-						<PropsTest title="TITLE 02" contents="Dolor sit amet"/>
-						<PropsTest title="TITLE 03" contents="consectetur adipiscing elit"/>
+				</small>
 
-					</small>
+			</details>
 
-				</details>
+			<details>
 
-				<details>
+				<summary>
+					<p>TEST STATE</p>
+				</summary>
 
-					<summary>
-						<p>TEST STATE</p>
-					</summary>
+				<small>
 
-					<small>
+					<StateTest />
 
-						<StateTest />
+				</small>
 
-					</small>
+			</details>
 
-				</details>
+			
+			<details>
 
-				
-				<details>
+				<summary>
+					<p>TEST EFFECT</p>
+				</summary>
 
-					<summary>
-						<p>TEST EFFECT</p>
-					</summary>
+				<small>
 
-					<small>
+					<EffectTest />
 
-						<EffectTest />
+				</small>
 
-					</small>
+			</details>
 
-				</details>
+			<details>
 
-				<details>
+				<summary>
+					<p>TEST REF</p>
+				</summary>
 
-					<summary>
-						<p>TEST REF</p>
-					</summary>
+				<small>
 
-					<small>
+					<RefTest />
 
-						<RefTest />
+				</small>
 
-					</small>
+			</details>
 
-				</details>
+			<details>
 
-				<details>
+				<summary>
+					<p>TEST CONTEXT</p>
+				</summary>
 
-					<summary>
-						<p>TEST CONTEXT</p>
-					</summary>
+				<small>
 
-					<small>
+					<ContextTest />
 
-						<ContextTest />
+				</small>
 
-					</small>
+			</details>
+			
 
-				</details>
-				
+			{/* <details>
 
-				{/* <details>
+				<summary>
+					<p>TEST MEMO</p>
+				</summary>
 
-					<summary>
-						<p>TEST MEMO</p>
-					</summary>
+				<small>
 
-					<small>
+					<MemoTest />
 
-						<MemoTest />
+				</small>
 
-					</small>
+			</details> */}
+			
 
-				</details> */}
-				
+			<details>
 
-				<details>
+				<summary>
+					<p>TEST CLASS TEST</p>
+				</summary>
 
-					<summary>
-						<p>TEST CLASS TEST</p>
-					</summary>
+				<small>
 
-					<small>
+					<p>Name in classtest is: {classtest.name}</p>
 
-						<p>Name in classtest is: {classtest.name}</p>
+					<p>value of {classtest.name} is: <b id="classtest">{classtest.getValue()}</b></p>
 
-						<p>value of {classtest.name} is: <b id="classtest">{classtest.getValue()}</b></p>
+					<button 
+						onClick={()=>{ 
+							classtest.increaseValue(100);
+							updateVal();
+						}}>
 
-						<button 
-							onClick={()=>{ 
-								classtest.increaseValue(100);
-								updateVal();
-							}}>
+						INCRESE VALUE OF {classtest.name}
 
-							INCRESE VALUE OF {classtest.name}
+					</button>
 
-						</button>
+					<button
+						onClick={()=>{ 
+							classtest.decreaseValue(50);
+							updateVal();
+						}}>
 
-						<button
-							onClick={()=>{ 
-								classtest.decreaseValue(50);
-								updateVal();
-							}}>
+						DECREASE VALUE OF {classtest.name}
 
-							DECREASE VALUE OF {classtest.name}
+					</button>
 
-						</button>
+				</small>
+			</details>
 
-					</small>
-				</details>
+			<details>
 
-				<details>
+				<summary>
+					<p>FUNCTIONS CALLING</p>
+				</summary>
 
-					<summary>
-						<p>FUNCTIONS CALLING</p>
-					</summary>
+				<div>
+					<button onClick={inner_functions_test}>
+						CALL UP A INNER FUNCITON
+					</button>
 
-					<div>
-						<button onClick={inner_functions_test}>
-							CALL UP A INNER FUNCITON
-						</button>
-
-						<button onClick={external_function_test}>
-							CALL UP AN EXTERNAL FUNCTION
-						</button>
-					</div>
-				</details>
-
-			</header>
+					<button onClick={external_function_test}>
+						CALL UP AN EXTERNAL FUNCTION
+					</button>
+				</div>
+			</details>
 
 		</div>
 
