@@ -30,10 +30,16 @@
 	// test effect
 	import EffectTest from '../components/effecttest.js'
 
-	// test effect
+	// test effect-layout
+	import LayoutEffectTest from '../components/effectlayouttest.js'
+
+	// test callback
+	import CallbackTest from '../components/callbacktest.js'	
+
+	// test ref
 	import RefTest from '../components/reftest.js'
 	
-	// test effect
+	// test context
 	import ContextTest from '../components/contexttest.js'
 
 	// test Memo
@@ -58,6 +64,98 @@ export default function Home () {
 
 			<Printheadtitles />
 
+			{/* TEST STATE */}
+			<details>
+
+				<summary>
+					<p>TEST STATE</p>
+				</summary>
+
+				<small>
+
+					<StateTest />
+
+				</small>
+
+			</details>
+
+			{/* TEST REDUCER */}
+			<details>
+
+				<summary>
+					<p>TEST REDUCER</p>
+				</summary>
+
+				<small>
+
+					<ReducerTest />
+
+				</small>
+
+			</details>
+
+			{/* TEST EFFECT */}
+			<details>
+
+				<summary>
+					<p>TEST EFFECT</p>
+				</summary>
+
+				<small>
+
+					<EffectTest />
+
+				</small>
+
+			</details>
+
+			{/* TEST LAYOUT EFFECT */}
+			<details>
+
+				<summary>
+					<p>TEST LAYOUT EFFECT</p>
+				</summary>
+
+				<small>
+
+					<LayoutEffectTest />
+
+				</small>
+
+			</details>
+
+			{/* TEST CALLBACK */}
+			<details>
+
+				<summary>
+					<p>TEST CALLBACK</p>
+				</summary>
+
+				<small>
+
+					<CallbackTest />
+
+				</small>
+
+			</details>
+
+
+			{/* TEST REF */}
+			<details>
+
+				<summary>
+					<p>TEST REF</p>
+				</summary>
+
+				<small>
+
+					<RefTest />
+
+				</small>
+
+			</details>
+
+			{/* TEST PROPS */}
 			<details>
 
 				<summary>
@@ -79,62 +177,7 @@ export default function Home () {
 
 			</details>
 
-			<details>
-
-				<summary>
-					<p>TEST STATE</p>
-				</summary>
-
-				<small>
-
-					<StateTest />
-
-				</small>
-
-			</details>
-
-			<details>
-
-				<summary>
-					<p>TEST REDUCER</p>
-				</summary>
-
-				<small>
-
-					<ReducerTest />
-
-				</small>
-
-			</details>
-
-			<details>
-
-				<summary>
-					<p>TEST EFFECT</p>
-				</summary>
-
-				<small>
-
-					<EffectTest />
-
-				</small>
-
-			</details>
-
-			<details>
-
-				<summary>
-					<p>TEST REF</p>
-				</summary>
-
-				<small>
-
-					<RefTest />
-
-				</small>
-
-			</details>
-
+			{/* TEST CONTEXT */}
 			<details>
 
 				<summary>
@@ -165,6 +208,7 @@ export default function Home () {
 			</details> */}
 			
 
+			{/* TEST CLASS TEST */}
 			<details>
 
 				<summary>
@@ -200,6 +244,7 @@ export default function Home () {
 				</small>
 			</details>
 
+			{/* FUNCTIONS CALLING */}
 			<details>
 
 				<summary>
