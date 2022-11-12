@@ -43,7 +43,7 @@
 	import ContextTest from '../components/contexttest.js'
 
 	// test Memo
-	// import MemoTest from '../components/memotest.js'
+	import MemoTest from '../components/memotest.js'
 
 
 //...
@@ -139,7 +139,6 @@ export default function Home () {
 
 			</details>
 
-
 			{/* TEST REF */}
 			<details>
 
@@ -191,9 +190,9 @@ export default function Home () {
 				</small>
 
 			</details>
-			
 
-			{/* <details>
+			{/* TEST MEMO */}
+			<details>
 
 				<summary>
 					<p>TEST MEMO</p>
@@ -205,7 +204,7 @@ export default function Home () {
 
 				</small>
 
-			</details> */}
+			</details>
 			
 
 			{/* TEST CLASS TEST */}
