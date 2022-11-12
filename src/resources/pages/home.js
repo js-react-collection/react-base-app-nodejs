@@ -24,6 +24,9 @@
 	// test state
 	import StateTest from '../components/statetest.js'
 
+	// reducer test
+	import ReducerTest from '../components/reducertest.js'
+
 	// test effect
 	import EffectTest from '../components/effecttest.js'
 
@@ -90,7 +93,20 @@ export default function Home () {
 
 			</details>
 
-			
+			<details>
+
+				<summary>
+					<p>TEST REDUCER</p>
+				</summary>
+
+				<small>
+
+					<ReducerTest />
+
+				</small>
+
+			</details>
+
 			<details>
 
 				<summary>
