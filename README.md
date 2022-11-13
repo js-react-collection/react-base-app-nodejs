@@ -1,4 +1,4 @@
-# react-base-app
+# react-base-app --nodejs
 
 by @bertz-tech and @ShapeGroup / react base app boilerplate in nodejs
 
