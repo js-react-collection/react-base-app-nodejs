@@ -205,7 +205,6 @@ export default function Home () {
 				</small>
 
 			</details>
-			
 
 			{/* TEST CLASS TEST */}
 			<details>
